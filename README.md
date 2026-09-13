@@ -59,3 +59,22 @@ npm run build
 ```
 
 The tests cover history preservation, concurrent stale saves, atomic persistence, validation, and imported unknown durations.
+
+## Docker and svemar04 deployment
+
+Deploy from this directory with Node/npm, Java (for the Gradle wrapper), rsync, and SSH access configured:
+
+```sh
+./gradlew upload-to-svemar04
+```
+
+This runs the production build and tests, syncs sources to `svemar@svemar04.local:~/MyApps/gym-react-app/source`, builds the image on the server, and starts `gym-react-app` with automatic restart. Open http://svemar04.local:5004. `deployDocker-svemar04` is an alias for the same task.
+
+History lives at `~/MyApps/gym-react-app/data/workouts.json` on the server. The initial deployment seeds the imported history only if that file does not exist. Redeployments preserve it and create a timestamped backup before replacing the container. A failed image build leaves the running container intact; deployment waits for the API health check before reporting success.
+
+To run Docker locally:
+
+```sh
+docker build -t gym-react-app .
+docker run -d --name gym-react-app -p 3001:3001 -v gym-history:/app/data gym-react-app
+```
