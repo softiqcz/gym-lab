@@ -525,7 +525,7 @@ footer {
   overflow: hidden;
 }
 .week-home {
-  padding-top: 28px;
+  padding-top: 8px;
 }
 .week-heading {
   display: flex;
@@ -537,17 +537,17 @@ footer {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   border-bottom: 1px solid #333;
-  margin: 24px 0 0;
+  margin: 0;
 }
 .day-tab {
-  padding: 12px 0 8px;
+  padding: 8px 0 4px;
   color: #777;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
   position: relative;
-  min-height: 60px;
+  min-height: 44px;
 }
 .day-tab > span:first-child {
   font-size: 10px;
@@ -577,7 +577,7 @@ footer {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  padding: 26px 7% 0;
+  padding: 16px 7% 0;
   margin: 0 -20px;
   position: relative;
   overscroll-behavior-x: contain;
@@ -714,24 +714,24 @@ footer {
     font-size: 13px;
   }
   .week-home {
-    padding-top: 36px;
+    padding-top: 8px;
   }
   .week-heading .eyebrow {
     font-size: 12px;
   }
   .week-nav {
-    margin-top: 28px;
+    margin-top: 0;
   }
   .day-tab {
-    padding: 16px 0 12px;
-    min-height: 64px;
+    padding: 8px 0 4px;
+    min-height: 44px;
   }
   .day-tab > span:first-child {
     font-size: 12px;
   }
   .week-carousel {
     margin: 0 -48px;
-    padding: 44px 11% 12px;
+    padding: 20px 11% 8px;
     gap: 40px;
     scroll-padding-inline: 11%;
   }
@@ -1533,3 +1533,5 @@ footer {
     align-self: end;
   }
 }
+
+.optional-workouts{margin-top:40px;border-top:1px solid #333;padding-top:24px}.optional-workout-list{display:grid;margin-top:16px}.optional-workout-list button{display:flex;justify-content:space-between;align-items:center;text-align:left;min-height:64px;padding:16px 0;border-bottom:1px solid #333;font-size:22px;letter-spacing:-.03em}.optional-workout-list button>span:last-child{color:#999}@media(min-width:800px){.optional-workouts{margin-top:56px}.optional-workout-list{grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}.optional-workout-list button{font-size:28px}}

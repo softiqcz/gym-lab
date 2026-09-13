@@ -196,6 +196,16 @@ export default function Home({
           );
         })}
       </div>
+      <section className="optional-workouts" aria-label="Optional workouts">
+        <h2 className="eyebrow">OPTIONAL WORKOUTS</h2>
+        <div className="optional-workout-list">
+          {definitions.filter(workout => workout.optional).map(workout => (
+            <button key={workout.id} disabled={!loaded} onClick={() => onStart(workout.id)}>
+              <span>{workout.name.replaceAll(' + ', ' ')}</span><span aria-hidden="true">↗</span>
+            </button>
+          ))}
+        </div>
+      </section>
     </section>
   );
 }
