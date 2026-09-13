@@ -89,3 +89,5 @@ New readings wait in device storage if offline and retry every 15 seconds, on fo
 
 - `GET /api/body-weight`: read body-weight history.
 - `POST /api/body-weight`: append `{ "id": "unique-id", "date": "2026-09-13", "kg": 80.70 }`.
+
+During an active workout (warm-up, sets, and rests), the app requests a screen wake lock and reacquires it when returning to the page. It releases the lock when leaving the workout. On a phone this requires serving the app over HTTPS; HTTP LAN addresses such as `http://svemar04.local` cannot use this browser API. The operating system can also refuse it in low-power mode.

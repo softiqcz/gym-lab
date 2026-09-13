@@ -118,6 +118,33 @@ export default function App() {
   const [page, setPage] = useState<
     "home" | "workout" | "history" | "detail" | "progress" | "complete"
   >("home");
+  useEffect(() => {
+    if (page !== "workout" || !active || !("wakeLock" in navigator)) return;
+    let disposed = false;
+    let requesting = false;
+    let lock: WakeLockSentinel | undefined;
+    async function keepAwake() {
+      if (disposed || requesting || document.visibilityState !== "visible" || (lock && !lock.released)) return;
+      requesting = true;
+      try {
+        const next = await navigator.wakeLock.request("screen");
+        if (disposed) await next.release();
+        else lock = next;
+      } catch {
+        // The browser can refuse a wake lock, for example in power-saving mode.
+      } finally { requesting = false; }
+    }
+    const refresh = () => { void keepAwake(); };
+    refresh();
+    document.addEventListener("visibilitychange", refresh);
+    window.addEventListener("focus", refresh);
+    return () => {
+      disposed = true;
+      document.removeEventListener("visibilitychange", refresh);
+      window.removeEventListener("focus", refresh);
+      void lock?.release().catch(() => {});
+    };
+  }, [page, active?.id]);
   const [detail, setDetail] = useState<WorkoutRecord | null>(null);
   const [progress, setProgress] = useState("");
   const [progressReturn, setProgressReturn] = useState<

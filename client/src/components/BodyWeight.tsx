@@ -89,7 +89,6 @@ export default function BodyWeight() {
           onKeyDown={event => { if (event.key === 'Enter') { event.preventDefault(); event.currentTarget.blur(); } }}/>
         <span>KG</span>
       </div>
-      <p>{latest ? `Recorded ${dateLabel(latest.date)}` : ready ? 'Add your first reading' : 'Loading weight…'}</p>
     </div>
     <div className="body-weight-chart">
       {records.length > 0 && <>
