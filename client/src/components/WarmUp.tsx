@@ -18,7 +18,6 @@ export default function WarmUp({
         <p className="eyebrow">BEFORE YOU BEGIN</p>
         <h1>Warm up</h1>
         <h2>{name}</h2>
-        <p className="muted">Take your time. Start when you’re ready.</p>
       </div>
       <div className="warmup-action">
         <span className="eyebrow">WARM-UP TIME</span>
