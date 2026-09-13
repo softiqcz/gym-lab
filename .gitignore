@@ -1,0 +1,5 @@
+node_modules/
+dist/
+server/dist/
+server/data/*.tmp
+.env

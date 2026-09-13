@@ -1,0 +1,9 @@
+{
+  "monday": "chest-shoulders-triceps",
+  "tuesday": "rest",
+  "wednesday": "back-biceps",
+  "thursday": "shoulders-chest-triceps",
+  "friday": "biceps-back",
+  "saturday": "triceps-chest-shoulders",
+  "sunday": "back-biceps"
+}
