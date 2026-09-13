@@ -1,0 +1,274 @@
+[
+  {
+    "id": "dumbbell-bench-press",
+    "name": "Dumbbell Bench Press",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Dumbbell+Bench+Press+tutorial"
+  },
+  {
+    "id": "incline-dumbbell-press",
+    "name": "Incline Dumbbell Press",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Incline+Dumbbell+Press+tutorial"
+  },
+  {
+    "id": "chest-fly",
+    "name": "Chest Fly",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Chest+Fly+tutorial"
+  },
+  {
+    "id": "dumbbell-lateral-raise",
+    "name": "Dumbbell Lateral Raise",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Dumbbell+Lateral+Raise+tutorial"
+  },
+  {
+    "id": "dumbbell-shoulder-press",
+    "name": "Dumbbell Shoulder Press",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Dumbbell+Shoulder+Press+tutorial"
+  },
+  {
+    "id": "triceps-pushdown",
+    "name": "Triceps Pushdown",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Triceps+Pushdown+tutorial",
+    "historyIds": ["triceps-pushdown", "triceps-pushdown-gx1"]
+  },
+  {
+    "id": "lat-pulldown",
+    "name": "Lat Pulldown",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "position",
+    "tutorialUrl": "https://www.google.com/search?q=Lat+Pulldown+tutorial"
+  },
+  {
+    "id": "one-arm-dumbbell-row",
+    "name": "One Arm Dumbbell Row",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=One+Arm+Dumbbell+Row+tutorial"
+  },
+  {
+    "id": "seated-cable-row",
+    "name": "Seated Cable Row",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "position",
+    "tutorialUrl": "https://www.google.com/search?q=Seated+Cable+Row+tutorial"
+  },
+  {
+    "id": "preacher-curl",
+    "name": "Preacher Curl",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "position",
+    "tutorialUrl": "https://www.google.com/search?q=Preacher+Curl+tutorial",
+    "historyIds": ["preacher-curl", "preacher-curl-gx1"]
+  },
+  {
+    "id": "dumbbell-curl",
+    "name": "Dumbbell Curl",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Dumbbell+Curl+tutorial"
+  },
+  {
+    "id": "hammer-curl",
+    "name": "Hammer Curl",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Hammer+Curl+tutorial"
+  },
+  {
+    "id": "goblet-squat",
+    "name": "Goblet Squat",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Goblet+Squat+tutorial"
+  },
+  {
+    "id": "bulgarian-split-squat",
+    "name": "Bulgarian Split Squat",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Bulgarian+Split+Squat+tutorial"
+  },
+  {
+    "id": "leg-extension",
+    "name": "Leg Extension",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Leg+Extension+tutorial"
+  },
+  {
+    "id": "leg-curl",
+    "name": "Leg Curl",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Leg+Curl+tutorial"
+  },
+  {
+    "id": "dumbbell-romanian-deadlift",
+    "name": "Dumbbell Romanian Deadlift",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Dumbbell+Romanian+Deadlift+tutorial"
+  },
+  {
+    "id": "calf-raises",
+    "name": "Calf Raises",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Calf+Raises+tutorial"
+  },
+  {
+    "id": "crunch",
+    "name": "Crunch",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Crunch+tutorial"
+  },
+  {
+    "id": "leg-raise",
+    "name": "Leg Raise",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Leg+Raise+tutorial"
+  },
+  {
+    "id": "plank",
+    "name": "Plank",
+    "sets": 5,
+    "targetReps": "30\u201360 sec",
+    "unit": "SEC",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Plank+tutorial"
+  },
+  {
+    "id": "preacher-curl-gx1",
+    "name": "Preacher Curl GX1",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "position",
+    "tutorialUrl": "https://www.google.com/search?q=Preacher+Curl+GX1+tutorial"
+  },
+  {
+    "id": "front-lateral-raises",
+    "name": "Front Lateral Raises",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Front+Lateral+Raises+tutorial"
+  },
+  {
+    "id": "arnold-press",
+    "name": "Arnold Press",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Arnold+Press+tutorial"
+  },
+  {
+    "id": "triceps-overhead-extension",
+    "name": "Triceps Overhead Extension",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Triceps+Overhead+Extension+tutorial"
+  },
+  {
+    "id": "incline-dumbbell-curl",
+    "name": "Incline Dumbbell Curl",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Incline+Dumbbell+Curl+tutorial"
+  },
+  {
+    "id": "concentration-curl",
+    "name": "Concentration Curl",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Concentration+Curl+tutorial"
+  },
+  {
+    "id": "dumbbell-squeeze-press",
+    "name": "Dumbbell Squeeze Press",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Dumbbell+Squeeze+Press+tutorial"
+  },
+  {
+    "id": "dumbbell-pullover",
+    "name": "Dumbbell Pullover",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Dumbbell+Pullover+tutorial"
+  },
+  {
+    "id": "triceps-pushdown-gx1",
+    "name": "Triceps Pushdown GX1",
+    "sets": 5,
+    "targetReps": "8\u201312",
+    "unit": "REPS",
+    "loadType": "weight",
+    "tutorialUrl": "https://www.google.com/search?q=Triceps+Pushdown+GX1+tutorial"
+  }
+]

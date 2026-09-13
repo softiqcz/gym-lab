@@ -1,0 +1,286 @@
+{
+  "workouts": [
+    {
+      "date": "2026-09-09",
+      "workoutId": "back-biceps",
+      "durationSeconds": null,
+      "exercises": [
+        {
+          "exerciseId": "lat-pulldown",
+          "position": 4,
+          "positionDirection": "DOWN",
+          "averageReps": 10,
+          "sets": 4,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "weight": 24,
+          "averageReps": 13,
+          "sets": 4,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "position": 4,
+          "positionDirection": "DOWN",
+          "averageReps": 12,
+          "sets": 4,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "preacher-curl-gx1",
+          "position": 7,
+          "positionDirection": "DOWN",
+          "averageReps": 12,
+          "sets": 4,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "dumbbell-curl",
+          "weight": 18,
+          "averageReps": 8,
+          "sets": 3,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "hammer-curl",
+          "weight": 14,
+          "averageReps": 11,
+          "sets": 3,
+          "durationSeconds": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "workoutId": "chest-shoulders-triceps",
+      "durationSeconds": null,
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-bench-press",
+          "weight": 24,
+          "averageReps": 12,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "incline-dumbbell-press",
+          "weight": 24,
+          "averageReps": 10,
+          "sets": 1,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "chest-fly",
+          "weight": 14,
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "front-lateral-raises",
+          "weight": 12,
+          "averageReps": 10,
+          "sets": 1,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "arnold-press",
+          "weight": 12,
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "triceps-overhead-extension",
+          "weight": 10,
+          "averageReps": 12,
+          "sets": 3,
+          "durationSeconds": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "workoutId": "biceps-back",
+      "durationSeconds": null,
+      "exercises": [
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "weight": 16,
+          "averageReps": 11,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "hammer-curl",
+          "weight": 16,
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "preacher-curl-gx1",
+          "position": 7,
+          "positionDirection": "DOWN",
+          "averageReps": 12,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "lat-pulldown",
+          "position": 4,
+          "positionDirection": "DOWN",
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "weight": 26,
+          "averageReps": 12,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "concentration-curl",
+          "weight": 12,
+          "averageReps": 12,
+          "sets": 5,
+          "durationSeconds": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "workoutId": "chest-shoulders-triceps",
+      "durationSeconds": null,
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-bench-press",
+          "weight": 24,
+          "averageReps": 12,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "dumbbell-squeeze-press",
+          "weight": 20,
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "dumbbell-pullover",
+          "weight": 20,
+          "averageReps": 13,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "weight": 10,
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "weight": 14,
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "triceps-pushdown-gx1",
+          "position": 4,
+          "positionDirection": "UP",
+          "weight": 25,
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "workoutId": "back-biceps",
+      "durationSeconds": null,
+      "exercises": [
+        {
+          "exerciseId": "seated-cable-row",
+          "position": 4,
+          "positionDirection": "DOWN",
+          "averageReps": 12,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "lat-pulldown",
+          "position": 4,
+          "positionDirection": "DOWN",
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "weight": 26,
+          "averageReps": 12,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "dumbbell-curl",
+          "weight": 16,
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "hammer-curl",
+          "weight": 16,
+          "averageReps": 10,
+          "sets": 5,
+          "durationSeconds": null
+        },
+        {
+          "exerciseId": "concentration-curl",
+          "weight": 12,
+          "averageReps": 12,
+          "sets": 5,
+          "durationSeconds": null
+        }
+      ]
+    }
+  ],
+  "activities": [],
+  "dailyTotals": {
+    "2026-09-09": {
+      "workoutSeconds": null,
+      "activitySeconds": 0,
+      "totalSeconds": null
+    },
+    "2026-09-10": {
+      "workoutSeconds": null,
+      "activitySeconds": 0,
+      "totalSeconds": null
+    },
+    "2026-09-11": {
+      "workoutSeconds": null,
+      "activitySeconds": 0,
+      "totalSeconds": null
+    },
+    "2026-09-12": {
+      "workoutSeconds": null,
+      "activitySeconds": 0,
+      "totalSeconds": null
+    },
+    "2026-09-13": {
+      "workoutSeconds": null,
+      "activitySeconds": 0,
+      "totalSeconds": null
+    }
+  }
+}

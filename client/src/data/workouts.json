@@ -1,0 +1,107 @@
+[
+  {
+    "id": "chest-shoulders-triceps",
+    "name": "Chest + Shoulders + Triceps",
+    "type": "strength",
+    "optional": false,
+    "exercises": [
+      "dumbbell-bench-press",
+      "incline-dumbbell-press",
+      "chest-fly",
+      "dumbbell-lateral-raise",
+      "dumbbell-shoulder-press",
+      "triceps-pushdown"
+    ]
+  },
+  {
+    "id": "shoulders-chest-triceps",
+    "name": "Shoulders + Chest + Triceps",
+    "type": "strength",
+    "optional": false,
+    "exercises": [
+      "front-lateral-raises",
+      "arnold-press",
+      "dumbbell-bench-press",
+      "incline-dumbbell-press",
+      "chest-fly",
+      "triceps-overhead-extension"
+    ]
+  },
+  {
+    "id": "triceps-chest-shoulders",
+    "name": "Triceps + Chest + Shoulders",
+    "type": "strength",
+    "optional": false,
+    "exercises": [
+      "triceps-pushdown",
+      "dumbbell-bench-press",
+      "dumbbell-squeeze-press",
+      "dumbbell-pullover",
+      "dumbbell-lateral-raise",
+      "dumbbell-shoulder-press"
+    ]
+  },
+  {
+    "id": "back-biceps",
+    "name": "Back + Biceps",
+    "type": "strength",
+    "optional": false,
+    "exercises": [
+      "lat-pulldown",
+      "one-arm-dumbbell-row",
+      "seated-cable-row",
+      "preacher-curl",
+      "dumbbell-curl",
+      "hammer-curl"
+    ]
+  },
+  {
+    "id": "biceps-back",
+    "name": "Biceps + Back",
+    "type": "strength",
+    "optional": false,
+    "exercises": [
+      "incline-dumbbell-curl",
+      "hammer-curl",
+      "preacher-curl",
+      "concentration-curl",
+      "lat-pulldown",
+      "one-arm-dumbbell-row"
+    ]
+  },
+  {
+    "id": "legs",
+    "name": "Legs",
+    "type": "strength",
+    "optional": true,
+    "exercises": [
+      "goblet-squat",
+      "bulgarian-split-squat",
+      "leg-extension",
+      "leg-curl",
+      "dumbbell-romanian-deadlift",
+      "calf-raises"
+    ]
+  },
+  {
+    "id": "abs",
+    "name": "Abs",
+    "type": "strength",
+    "optional": true,
+    "exercises": ["crunch", "leg-raise", "plank"]
+  },
+  {
+    "id": "cycling",
+    "name": "Cycling",
+    "type": "cardio",
+    "optional": true,
+    "activities": ["cycling"]
+  },
+  {
+    "id": "cardio",
+    "name": "Cardio",
+    "type": "cardio",
+    "optional": true,
+    "activities": ["running", "walking", "rowing", "elliptical"]
+  }
+]
