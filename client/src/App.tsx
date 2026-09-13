@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import definitions from "./data/workouts.json";
 import exercises from "./data/exercises.json";
 import Home from "./components/Home";
+import BodyWeight from "./components/BodyWeight";
 import HistoryPage, { Progression } from "./components/History";
 import WorkoutExercise from "./components/WorkoutExercise";
 import WarmUp from "./components/WarmUp";
@@ -437,6 +438,7 @@ export default function App() {
           <button onClick={() => void sync()}>RETRY SYNC ↻</button>
         </div>
       )}
+      {page === "home" && <BodyWeight />}
       {page === "home" &&
         (active ? (
           <section className="hero recovery-home">

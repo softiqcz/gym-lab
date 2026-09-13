@@ -9,9 +9,11 @@ export PATH="/usr/local/bin:/opt/homebrew/bin:/Applications/Docker.app/Contents/
 cd "$HOME/MyApps/gym-react-app/source"
 docker build -t gym-react-app:latest .
 # Back up existing history before replacing the application container.
-if [ -f ../data/workouts.json ]; then
-    cp ../data/workouts.json "../data/workouts.$(date +%Y%m%d-%H%M%S).json"
-fi
+for history in workouts body-weight; do
+    if [ -f "../data/$history.json" ]; then
+        cp "../data/$history.json" "../data/$history.$(date +%Y%m%d-%H%M%S).json"
+    fi
+done
 if docker container inspect gym-react-app >/dev/null 2>&1; then
     docker stop gym-react-app
     docker rm gym-react-app

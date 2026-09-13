@@ -16,6 +16,7 @@ RUN npm ci --omit=dev && npm cache clean --force
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/server/dist ./server/dist
 COPY server/data/workouts.json ./seed/workouts.json
+COPY server/seed/body-weight.json ./server/seed/body-weight.json
 COPY scripts/docker-entrypoint.sh ./scripts/docker-entrypoint.sh
 RUN mkdir /app/data && chown node:node /app/data && chmod +x scripts/docker-entrypoint.sh
 USER node

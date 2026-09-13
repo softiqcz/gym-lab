@@ -1,22 +1,37 @@
 import express from "express";
 import { fileURLToPath } from "node:url";
-import { resolve } from "node:path";
+import { dirname, resolve } from "node:path";
 import { makeStore, revision } from "./store.js";
+import { makeBodyWeightStore } from "./bodyWeightStore.js";
 const app = express();
 const root = fileURLToPath(new URL("../", import.meta.url));
 const store = makeStore(
   process.env.DATA_FILE ?? resolve(root, "data/workouts.json"),
 );
+const bodyWeights = makeBodyWeightStore(
+  process.env.BODY_WEIGHT_FILE ?? resolve(dirname(process.env.DATA_FILE ?? resolve(root, "data/workouts.json")), "body-weight.json"),
+  resolve(root, "seed/body-weight.json"),
+);
 app.use(express.json({ limit: "5mb" }));
+app.get("/api/body-weight", async (_req, res) => {
+  try { res.set("Cache-Control", "no-store").json(await bodyWeights.read()); }
+  catch { res.status(500).json({ error: "Could not read body-weight history." }); }
+});
+app.post("/api/body-weight", async (req, res) => {
+  try { res.json(await bodyWeights.append(req.body)); }
+  catch (e) { res.status((e as any).status ?? 500).json({ error: (e as Error).message }); }
+});
+
 app.get("/api/health", async (_req, res) => {
   try {
     await store.read();
+    await bodyWeights.read();
     res.json({ status: "ok" });
   } catch {
     res
       .status(503)
       .json({
-        error: "Workout history is unreadable. Check the server data file.",
+        error: "History is unreadable. Check the server JSON data files.",
       });
   }
 });

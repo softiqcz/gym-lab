@@ -78,3 +78,14 @@ To run Docker locally:
 docker build -t gym-react-app .
 docker run -d --name gym-react-app -p 3001:3001 -v gym-history:/app/data gym-react-app
 ```
+
+## Body weight
+
+The home page always shows the latest body weight and its recorded date, with a graph of previous readings. Edit the visible KG input and press Enter or leave the field to save a changed weight automatically with the current local JavaScript date; select graph points to inspect older values. Multiple readings on one date are kept, and the newest entry for that date appears as current.
+
+`server/data/body-weight.json` stores body weight separately from workouts. `server/seed/body-weight.json` contains the 12 imported weekly readings from 22 June to 7 September 2026 (latest: 80.70 kg). The server initializes the file only when missing. On svemar04 it lives at `~/MyApps/gym-react-app/data/body-weight.json`, in the existing persistent Docker mount. Redeployments preserve readings and back up both JSON histories. `BODY_WEIGHT_FILE` can override its location.
+
+New readings wait in device storage if offline and retry every 15 seconds, on focus, and on reconnect. The latest fetched history is cached for display. Server writes are atomic and serialized; retried reading IDs do not create duplicates.
+
+- `GET /api/body-weight`: read body-weight history.
+- `POST /api/body-weight`: append `{ "id": "unique-id", "date": "2026-09-13", "kg": 80.70 }`.

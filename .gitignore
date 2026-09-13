@@ -8,3 +8,5 @@ server/data/*.tmp
 build/
 
 .vite/
+
+server/data/body-weight.json
