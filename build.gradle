@@ -1,0 +1,27 @@
+plugins {
+    id 'base'
+}
+
+tasks.register('npmBuild', Exec) {
+    commandLine 'npm', 'run', 'build'
+}
+
+tasks.register('npmTest', Exec) {
+    commandLine 'npm', 'test'
+}
+
+tasks.named('build') { dependsOn 'npmBuild' }
+tasks.named('check') { dependsOn 'npmTest' }
+
+tasks.register('upload-to-svemar04', Exec) {
+    group = 'svemar'
+    description = 'Build, test, sync sources and deploy the Docker container to svemar04'
+    dependsOn 'build'
+    commandLine 'sh', 'scripts/deploy-svemar04.sh'
+}
+
+tasks.register('deployDocker-svemar04') {
+    group = 'svemar'
+    description = 'Alias for upload-to-svemar04'
+    dependsOn 'upload-to-svemar04'
+}

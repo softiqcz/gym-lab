@@ -1,0 +1,10 @@
+node_modules
+.git
+.gradle
+build
+dist
+server/dist
+.DS_Store
+
+.env
+.env.*
